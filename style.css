@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 32%, 27%);
+    font-family: 'Outfit', sans-serif;
+}
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width:100%;
+}
+.card
+{
+    height: 500px;
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    box-shadow: 2px 25px 2px 12px hsla(0, 0%, 0%, 0.20);
+
+}
+.card .image
+{
+    max-width: 250px;
+    width: 250px;
+    max-height: 300px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card .image img
+{
+    max-width: 250px;
+    width: 250px;
+    max-height: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 15px 25px;
+    justify-content: center;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 90px;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+  }
+
+  .image:hover {
+    opacity: 0.3;
+  }
+  
+  .image:hover .middle {
+    opacity: 1;
+  }
+  
+  .see img {
+
+    color: white;
+    height: 60px !important;
+    width: 60px !important;
+  }
+.info
+{
+    display: block;
+    margin: 0px 30px;
+}
+.info p
+{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+.info #user
+{
+    position: absolute;
+    margin-top: 35px;
+}
+#user-img
+{
+    height: 30px;
+    width: 30;
+}
+#title
+{
+    cursor: pointer;
+}
+#line
+{
+    position: absolute;
+    margin-top: 20px;
+    width: 250px;
+}
+.data
+{
+    margin: 15px 0px;
+}
+.info #data
+{
+    margin-top: 20px;
+    font-size: 16px;
+}
+#date 
+{
+    position: absolute;
+    margin-left: 65px;
+    color: hsl(215, 51%, 70%);
+}
+#price
+{
+    color: hsl(178, 100%, 50%);
+}
